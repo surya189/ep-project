@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>College Election System</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id='topnav'>
+    <a href="home.html">College Election System</a>
+    <div class='topnav-right'>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </div>
+  </div>
+
+  <div class="page_name"><h1>Welcome to 2021 Elections</h1></div>
+
+  <div>
+    <marquee behavior="scroll" direction="left" class="scroll_message">
+      <span style='color: black'>**Notification**</span> Elections for Campus President are Starting soon !
+      <span style='color: black'>**Notification**</span> <a href='register.html'>Create</a> an account to vote !
+      <span style='color: black'>**Notification**</span> <a href='login.html'>Login</a> to get Started !
+    </marquee>
+  </div>
+
+  <div class="slides">
+    <img class="mySlides" src="images/3.jpg" style="width:100%">
+    <img class="mySlides" src="images/2.png" style="width:100%">
+    <img class="mySlides" src="images/1.png" style="width:100%">
+  </div>
+
+  <div style=""><h3 style='text-align:center; color:red;font-family: sans-serif;'> Parties Participating in Elections</h3>
+ </div> <div class="row" style="width:1000px; margin: 0 auto;">
+    <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/party1.png" alt="Party1" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>The Thugs</h1>
+            <p>Lead by : Mr.Surya</p>
+            <p>Year : 2th</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/party2.png" alt="Party2" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>The Sems</h1>
+            <p>Lead by : Mr.bablu</p>
+            <p>Year : 2th</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/party3.png" alt="Party3" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>The Rivals</h1>
+            <p>Lead by : stranger</p>
+            <p>Year : 2rd</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  <div>
+    <h3 style='color:crimson;font-family:sans-serif'> To Vote your favourite parties create an voting account.</h3>
+    <br>
+    <p style='color:darkgoldenrod;font-family:sans-serif'>Create your voting account <a href='register.html'>here!</a>
+    </p><br>
+
+    <p style='color: darkgoldenrod;font-family:sans-serif'>Login <a href='login.html'>here!</a> to get started.</p>
+  </div>
+  <br>
+
+  <div class="footer">
+    <p>College Election System</p>
+    <hr>
+    <ul></ul>
+  </div>
+  
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id='topnav'>
+        <a href="home.html">College Election System</a>
+        <div class='topnav-right'>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+    </div>
+
+    <div>
+        <div id='form_wrapper'>
+
+            <div id='form_left_1' class="rcorner">
+                <h2>College Election System<br>____________________________________ </h2>
+                <p style='color:white; font-family: sans-serif;'>Create an vote account to vote your favorite party</p>
+            </div>
+    
+            <div id='form_right'>
+                <form method="post" id="register" onsubmit='return registerValidate()' action='RegisterUser'>
+
+                    <p style='font-family: sans-serif;'>Welcome Register Here !</p>
+                    <hr>
+
+                    <label for="username"> User name </label>
+                    <div>
+                        <input type="text" name="username" id="username" value=""
+                            placeholder="Username must be your student ID">
+                    </div>
+
+                    <label for="email"> Email </label>
+                    <div>
+                        <input type="mail" name="email" id="email" value="" placeholder="Email">
+                    </div>
+
+                    <label for="phone"> Phone Number </label>
+                    <div>
+                        <input type="tel" name="phone" id="phone" value="" placeholder="Phone Number">
+                    </div>
+
+                    <div>
+                        Branch<select id="branch" name="branch">
+                            <option value="cse">CSE</option>
+                            <option value="ece"> ECE </option>
+                            <option value="me"> ME </option>
+                            <option value="bt"> BT</option>
+                            <option value="ce"> CE </option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <strong>Gender</strong><br>
+                        Male <input type="radio" name="gender" value="male">
+                        Female <input type="radio" name="gender" value="female">
+                        Other<input type="radio" name="gender" value="other" checked><br>
+                    </div><br>
+
+                    <label for="password">Password</label>
+                    <div>
+                        <input type="password" name="password" id="password" value="" class="form-control"
+                            placeholder="Password">
+                    </div>
+
+                    <label for="cpassword">Confirm Password</label>
+                    <div>
+                        <input type="password" name="cpassword" id="cpassword" value="" class="form-control"
+                            placeholder="Confirm Password">
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="terms_and_conditions" id="terms_and_conditions" value="1" />
+                        <label for="terms_and_conditions">Terms And Conditions</label>
+                    </div>
+
+                    <input type="submit" value="Register">
+
+                    <div>
+                        Already a member Login <a href='login.html'>here!!</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <br><br> <br><br> <br><br> <br><br> <br><br>
+
+    <div class="footer">
+        <p>College Election System</p>
+        <hr>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

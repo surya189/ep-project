@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div id='topnav'>
+        <a href="home.html">College Election System</a>
+        <div class='topnav-right'>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+    </div>
+
+
+    <div>
+        <div id='form_wrapper'>
+
+            <div id='form_left' class="rcorner">
+                <h2>College Election System<br><span>______________________________ </span></h2>
+                <p style='color: white; font-family:sans-serif'>Login to vote your favorite party!!</p>
+                <div>
+                    For Admin login click <a href='adminlogin.html'>here.</a>
+                </div>
+            </div>
+            <div id='form_right'>
+                <form method="post" onsubmit="return validate()" action='LoginUser'>
+
+                    <p style='font-family: sans-serif; color:#000;'>Welcome Login Here !</p>
+                    <hr>
+
+                    <label for="username"> Username </label>
+                    <div>
+                        <input type="text" name="username" id="username" value="" placeholder="Username ">
+                    </div>
+
+                    <label for="password">Password</label>
+                    <div>
+                        <input type="password" name="password" id="password" value="" class="form-control"
+                            placeholder="Password">
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="rememberusername" id="rememberusername" value="1" />
+                        <label for="rememberusername">Remember username</label>
+                    </div>
+
+                    <input type="submit" value="Log in">
+                  
+
+                    <div style="color: #000; padding-top: 10px; font-size: 14px;">
+                        Not a member Register <a href='register.html'>here!!</a>
+                    </div>
+
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>College Election System</p>
+        <hr>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
